@@ -487,22 +487,23 @@ img {
 }
 
 .hero-logo-wrapper {
-  margin-bottom: 1.8rem;
+  margin-bottom: 2.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .hero-logo-img {
-  max-width: 220px;
+  width: clamp(280px, 55vw, 440px);
+  max-width: 92%;
   height: auto;
   object-fit: contain;
-  filter: drop-shadow(0 6px 20px rgba(0, 0, 0, 0.9));
+  filter: drop-shadow(0 8px 25px rgba(0, 0, 0, 0.95)) drop-shadow(0 0 35px rgba(255, 159, 28, 0.25));
   transition: transform var(--transition-normal);
 }
 
 .hero-logo-img:hover {
-  transform: scale(1.05);
+  transform: scale(1.04);
 }
 
 .hero-title {
