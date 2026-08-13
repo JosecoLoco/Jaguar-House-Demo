@@ -1150,6 +1150,12 @@ img {
     border-bottom: 1px solid var(--border-copper);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
   }
+
+  body {
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: top center;
+  }
 }
 
 /* 12. MOBILE OPTIMIZATIONS & SMALL SCREENS (< 480px) */
