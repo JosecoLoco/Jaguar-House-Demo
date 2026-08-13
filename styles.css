@@ -486,22 +486,23 @@ img {
   max-width: 900px;
 }
 
-.hero-badge {
-  display: inline-flex;
+.hero-logo-wrapper {
+  margin-bottom: 1.8rem;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 0.5rem;
-  background-color: rgba(26, 26, 26, 0.85);
-  border: 1px solid var(--border-copper);
-  color: var(--text-main);
-  padding: 0.4rem 1.2rem;
-  border-radius: 50px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
 }
 
-.icon-svg {
-  color: var(--accent-copper);
+.hero-logo-img {
+  max-width: 220px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 20px rgba(0, 0, 0, 0.9));
+  transition: transform var(--transition-normal);
+}
+
+.hero-logo-img:hover {
+  transform: scale(1.05);
 }
 
 .hero-title {
