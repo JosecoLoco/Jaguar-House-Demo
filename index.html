@@ -115,6 +115,10 @@
 </head>
 <body>
 
+  <!-- Pure CSS Language Switcher State Controls -->
+  <input type="radio" name="lang-state" id="lang-es" checked class="lang-radio-state">
+  <input type="radio" name="lang-state" id="lang-en" class="lang-radio-state">
+
   <!-- Sticky Header Navigation -->
   <header class="navbar-header">
     <div class="nav-container">
@@ -122,6 +126,17 @@
         <img src="assets/images/Logo_Negro.jpg" alt="Jaguar House Logo" class="brand-logo-img">
         <span class="brand-text">JAGUAR HOUSE</span>
       </a>
+
+      <div class="lang-switcher-container">
+        <label for="lang-es" class="lang-btn btn-es" title="Ver en Español">
+          <span class="flag-icon">🇪🇸</span>
+          <span>ES</span>
+        </label>
+        <label for="lang-en" class="lang-btn btn-en" title="View in English">
+          <span class="flag-icon">🇬🇧</span>
+          <span>EN</span>
+        </label>
+      </div>
 
       <!-- Pure CSS Mobile Menu Toggle -->
       <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
@@ -132,12 +147,30 @@
       </label>
 
       <nav class="nav-menu">
-        <a href="#inicio" class="nav-link">Inicio</a>
-        <a href="#esencia" class="nav-link">Nuestra Esencia</a>
-        <a href="#especialidades" class="nav-link">Especialidades</a>
-        <a href="#reseñas" class="nav-link">Reseñas</a>
-        <a href="#ubicacion" class="nav-link">Ubicación</a>
-        <a href="https://wa.me/593995228052?text=Hola%20Jaguar%20House,%20me%20gustar%C3%ADa%20solicitar%20una%20reserva%20de%20mesa%20en%20su%20restaurante." target="_blank" rel="noopener noreferrer" class="nav-link btn-nav-cta">Reservar Mesa</a>
+        <a href="#inicio" class="nav-link">
+          <span class="lang-es">Inicio</span>
+          <span class="lang-en">Home</span>
+        </a>
+        <a href="#esencia" class="nav-link">
+          <span class="lang-es">Nuestra Esencia</span>
+          <span class="lang-en">Our Essence</span>
+        </a>
+        <a href="#especialidades" class="nav-link">
+          <span class="lang-es">Especialidades</span>
+          <span class="lang-en">Specialties</span>
+        </a>
+        <a href="#reseñas" class="nav-link">
+          <span class="lang-es">Reseñas</span>
+          <span class="lang-en">Reviews</span>
+        </a>
+        <a href="#ubicacion" class="nav-link">
+          <span class="lang-es">Ubicación</span>
+          <span class="lang-en">Location</span>
+        </a>
+        <a href="https://wa.me/593995228052?text=Hola%20Jaguar%20House,%20me%20gustar%C3%ADa%20solicitar%20una%20reserva%20de%20mesa%20en%20su%20restaurante." target="_blank" rel="noopener noreferrer" class="nav-link btn-nav-cta">
+          <span class="lang-es">Reservar Mesa</span>
+          <span class="lang-en">Book Table</span>
+        </a>
       </nav>
     </div>
   </header>
@@ -158,18 +191,26 @@
           </svg>
           <span>Calle Martinez y Eloy Alfaro, Baños 180250, Ecuador</span>
         </div>
-        <h1 class="hero-title">La Parrilla Premium en Baños con la Vista Más Exclusiva.</h1>
+        <h1 class="hero-title">
+          <span class="lang-es">La Parrilla Premium en Baños con la Vista Más Exclusiva.</span>
+          <span class="lang-en">The Premium Grill in Baños with the Most Exclusive View.</span>
+        </h1>
         <p class="hero-subtitle">
-          Located in the vibrant town of Baños de Agua Santa. Especializados en carnes maduradas a la parrilla, jugosas hamburguesas, alitas, opciones vegetarianas/veganas y coctelería de autor con vista a la icónica iglesia de Baños.
+          <span class="lang-es">Ubicados en la vibrante ciudad de Baños de Agua Santa. Especializados en carnes maduradas a la parrilla, jugosas hamburguesas, alitas, opciones vegetarianas/veganas y coctelería de autor con vista a la icónica iglesia de Baños.</span>
+          <span class="lang-en">Located in the vibrant town of Baños de Agua Santa. Specializing in premium grilled meats, juicy burgers, wings, vegetarian/vegan options, and craft cocktails with views of the iconic Baños church.</span>
         </p>
         <div class="hero-actions">
           <a href="https://wa.me/593995228052?text=Hola%20Jaguar%20House,%20me%20gustar%C3%ADa%20solicitar%20una%20reserva%20de%20mesa%20en%20su%20restaurante." target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-            <span>Reservar mi Mesa</span>
+            <span class="lang-es">Reservar mi Mesa</span>
+            <span class="lang-en">Book My Table</span>
             <svg class="btn-arrow" viewBox="0 0 24 24" width="20" height="20">
               <path fill="currentColor" d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"/>
             </svg>
           </a>
-          <a href="#especialidades" class="btn btn-outline">Ver Especialidades</a>
+          <a href="#especialidades" class="btn btn-outline">
+            <span class="lang-es">Ver Especialidades</span>
+            <span class="lang-en">View Specialties</span>
+          </a>
         </div>
         
         <div class="hero-features-bar">
@@ -178,20 +219,29 @@
               <circle cx="12" cy="12" r="9"/>
               <path d="M12 7v5l3 3"/>
             </svg>
-            <span class="feature-text">Abierto hasta las 22:00</span>
+            <span class="feature-text">
+              <span class="lang-es">Abierto hasta las 22:00</span>
+              <span class="lang-en">Open until 10:00 PM</span>
+            </span>
           </div>
           <div class="hero-feature-item">
             <svg class="feature-svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M12 2c0 3.5-3 5-3 8a3 3 0 0 0 6 0c0-3-3-4.5-3-8z"/>
               <path d="M12 14c-4.4 0-8 2-8 4.5V21h16v-2.5c0-2.5-3.6-4.5-8-4.5z"/>
             </svg>
-            <span class="feature-text">Leña Nativa & Brasa Viva</span>
+            <span class="feature-text">
+              <span class="lang-es">Leña Nativa & Brasa Viva</span>
+              <span class="lang-en">Native Wood & Live Charcoal</span>
+            </span>
           </div>
           <div class="hero-feature-item">
             <svg class="feature-svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
             </svg>
-            <span class="feature-text">Opciones Vegetarianas & Veganas</span>
+            <span class="feature-text">
+              <span class="lang-es">Opciones Vegetarianas & Veganas</span>
+              <span class="lang-en">Vegetarian & Vegan Options</span>
+            </span>
           </div>
         </div>
       </div>
@@ -201,15 +251,23 @@
     <section id="esencia" class="section esencia-section">
       <div class="container essence-grid">
         <div class="essence-text-col">
-          <span class="section-tag">NUESTRA ESENCIA</span>
-          <h2 class="section-title">Comida, Música y Gran Ambiente</h2>
+          <span class="section-tag">
+            <span class="lang-es">NUESTRA ESENCIA</span>
+            <span class="lang-en">OUR ESSENCE</span>
+          </span>
+          <h2 class="section-title">
+            <span class="lang-es">Comida, Música y Gran Ambiente</span>
+            <span class="lang-en">Food, Music & Great Vibe</span>
+          </h2>
           <div class="title-divider"></div>
           
           <p class="essence-lead">
-            Located in the vibrant town of Baños de Agua Santa, <strong>Jaguar House</strong> is a lively grill and restaurant where great food, music and atmosphere come together.
+            <span class="lang-es">Ubicado en la ciudad de Baños de Agua Santa, <strong>Jaguar House</strong> es una parrilla y restaurante lleno de vida donde la buena comida, la música y el ambiente se unen.</span>
+            <span class="lang-en">Located in the vibrant town of Baños de Agua Santa, <strong>Jaguar House</strong> is a lively grill and restaurant where great food, music and atmosphere come together.</span>
           </p>
           <p class="essence-body">
-            Nos especializamos en carnes a la parrilla premium, jugosas hamburguesas, alitas y cócteles de la casa, todo preparado con ingredientes frescos y sabores audaces. Nuestro amplio restaurante cuenta con columpios, juegos y un hermoso jardín en la terraza con vista a la icónica iglesia de Baños, creando un ambiente relajado y divertido para viajeros y locales por igual.
+            <span class="lang-es">Nos especializamos en carnes a la parrilla premium, jugosas hamburguesas, alitas y cócteles de la casa, todo preparado con ingredientes frescos y sabores audaces. Nuestro amplio restaurante cuenta con columpios, juegos y un hermoso jardín en la terraza con vista a la icónica iglesia de Baños, creando un ambiente relajado y divertido para viajeros y locales por igual.</span>
+            <span class="lang-en">We specialize in premium grilled meats, juicy burgers, wings and house cocktails, all prepared with fresh ingredients and bold flavors. Our spacious restaurant features swings, games and a beautiful terrace garden with views of the iconic Baños church, creating a relaxed and fun environment for travelers and locals alike.</span>
           </p>
           
           <div class="essence-highlights">
@@ -221,8 +279,14 @@
                 </svg>
               </div>
               <div>
-                <h4>Parrilla Premium & Variedad</h4>
-                <p>Cortes madurados, alitas, hamburguesas y opciones vegetarianas y veganas.</p>
+                <h4>
+                  <span class="lang-es">Parrilla Premium & Variedad</span>
+                  <span class="lang-en">Premium Grill & Variety</span>
+                </h4>
+                <p>
+                  <span class="lang-es">Cortes madurados, alitas, hamburguesas y opciones vegetarianas y veganas.</span>
+                  <span class="lang-en">Aged steaks, wings, burgers, and vegetarian & vegan options.</span>
+                </p>
               </div>
             </div>
             <div class="highlight-card">
@@ -233,8 +297,14 @@
                 </svg>
               </div>
               <div>
-                <h4>Terraza Jardín con Vista Única</h4>
-                <p>Disfruta de la vista directa a la iglesia de Baños en un ambiente relajado con música y columpios.</p>
+                <h4>
+                  <span class="lang-es">Terraza Jardín con Vista Única</span>
+                  <span class="lang-en">Terrace Garden with Unique View</span>
+                </h4>
+                <p>
+                  <span class="lang-es">Disfruta de la vista directa a la iglesia de Baños en un ambiente relajado con música y columpios.</span>
+                  <span class="lang-en">Enjoy direct views of the Baños church in a relaxed setting with music and swings.</span>
+                </p>
               </div>
             </div>
           </div>
@@ -246,7 +316,10 @@
             <div class="frame-border"></div>
             <div class="floating-badge">
               <span class="floating-badge-number">100%</span>
-              <span class="floating-badge-label">Buenas Vibras</span>
+              <span class="floating-badge-label">
+                <span class="lang-es">Buenas Vibras</span>
+                <span class="lang-en">Good Vibes</span>
+              </span>
             </div>
           </div>
         </div>
@@ -257,10 +330,19 @@
     <section id="especialidades" class="section especialidades-section">
       <div class="container">
         <div class="section-header text-center">
-          <span class="section-tag">NUESTRA CARTA</span>
-          <h2 class="section-title">Especialidades de la Casa</h2>
+          <span class="section-tag">
+            <span class="lang-es">NUESTRA CARTA</span>
+            <span class="lang-en">OUR MENU</span>
+          </span>
+          <h2 class="section-title">
+            <span class="lang-es">Especialidades de la Casa</span>
+            <span class="lang-en">House Specialties</span>
+          </h2>
           <div class="title-divider center"></div>
-          <p class="section-subtitle">Parrilladas premium, cortes a la brasa, aves, opciones vegetarianas/veganas y mixología de autor.</p>
+          <p class="section-subtitle">
+            <span class="lang-es">Parrilladas premium, cortes a la brasa, aves, opciones vegetarianas/veganas y mixología de autor.</span>
+            <span class="lang-en">Premium grilled steaks, flame-cooked meats, poultry, vegetarian/vegan options, and craft mixology.</span>
+          </p>
         </div>
 
         <div class="specialties-grid">
@@ -268,7 +350,10 @@
           <article class="specialty-card">
             <div class="card-image-wrapper">
               <img src="assets/images/Foto_Tomahawk.jpg" alt="Tomahawk Jaguar al Carbón" class="card-img" loading="lazy">
-              <span class="card-tag">Especialidad de la Casa</span>
+              <span class="card-tag">
+                <span class="lang-es">Especialidad de la Casa</span>
+                <span class="lang-en">House Special</span>
+              </span>
             </div>
             <div class="card-body">
               <div class="card-header-flex">
@@ -276,12 +361,19 @@
                 <span class="card-price">$45.00</span>
               </div>
               <p class="card-description">
-                Corte Ribeye con hueso madurado en seco, sellado a la brasa viva con sal marina gruesa y mantequilla de hierbas finas. Servido en tabla.
+                <span class="lang-es">Corte Ribeye con hueso madurado en seco, sellado a la brasa viva con sal marina gruesa y mantequilla de hierbas finas. Servido en tabla.</span>
+                <span class="lang-en">Dry-aged bone-in Ribeye steak, seared over live embers with coarse sea salt and herb butter. Served on board.</span>
               </p>
               <div class="card-footer-meta">
-                <span class="meta-item">Fuego Directo</span>
+                <span class="meta-item">
+                  <span class="lang-es">Fuego Directo</span>
+                  <span class="lang-en">Open Flame</span>
+                </span>
                 <span class="meta-dot">•</span>
-                <span class="meta-item">Para 2 Personas</span>
+                <span class="meta-item">
+                  <span class="lang-es">Para 2 Personas</span>
+                  <span class="lang-en">Serves 2</span>
+                </span>
               </div>
             </div>
           </article>
@@ -403,10 +495,19 @@
     <section id="reseñas" class="section reseñas-section">
       <div class="container">
         <div class="section-header text-center">
-          <span class="section-tag">OPINIONES</span>
-          <h2 class="section-title">Lo Que Dicen Nuestros Comensales</h2>
+          <span class="section-tag">
+            <span class="lang-es">OPINIONES</span>
+            <span class="lang-en">REVIEWS</span>
+          </span>
+          <h2 class="section-title">
+            <span class="lang-es">Lo Que Dicen Nuestros Comensales</span>
+            <span class="lang-en">What Our Guests Say</span>
+          </h2>
           <div class="title-divider center"></div>
-          <p class="section-subtitle">Experiencias inolvidables compartidas por viajeros y locales en Baños de Agua Santa.</p>
+          <p class="section-subtitle">
+            <span class="lang-es">Experiencias inolvidables compartidas por viajeros y locales en Baños de Agua Santa.</span>
+            <span class="lang-en">Unforgettable experiences shared by travelers and locals in Baños de Agua Santa.</span>
+          </p>
         </div>
 
         <div class="reviews-grid">
@@ -423,7 +524,8 @@
               <span class="platform-badge tripadvisor">TripAdvisor</span>
             </div>
             <p class="review-text">
-              "After exploring waterfalls, Jaguar House was the perfect place! El Tomahawk estaba exactamente en su punto y la terraza jardín con vista a la iglesia es genial."
+              <span class="lang-es">"Tras explorar las cascadas, Jaguar House fue el lugar perfecto. El Tomahawk estaba exactamente en su punto y la terraza jardín con vista a la iglesia es genial."</span>
+              <span class="lang-en">"After exploring waterfalls, Jaguar House was the perfect place! The Tomahawk steak was perfectly cooked and the terrace garden with views of the church is awesome."</span>
             </p>
             <div class="reviewer-info">
               <div class="reviewer-avatar">CM</div>
@@ -447,7 +549,8 @@
               <span class="platform-badge google">Google Reviews</span>
             </div>
             <p class="review-text">
-              "Great atmosphere, music, and delicious vegan options for my group. Aceptan tarjetas Mastercard y Visa sin inconvenientes. ¡10/10!"
+              <span class="lang-es">"Gran ambiente, música y deliciosas opciones veganas para mi grupo. Aceptan tarjetas Mastercard y Visa sin inconvenientes. ¡10/10!"</span>
+              <span class="lang-en">"Great atmosphere, music, and delicious vegan options for my group. They accept Mastercard and Visa without issues. 10/10!"</span>
             </p>
             <div class="reviewer-info">
               <div class="reviewer-avatar">SR</div>
@@ -471,7 +574,8 @@
               <span class="platform-badge opentable">OpenTable</span>
             </div>
             <p class="review-text">
-              "Nos encantó el ambiente con columpios, música y estacionamiento gratuito justo en la calle. Las hamburguesas y los cócteles son de primer nivel."
+              <span class="lang-es">"Nos encantó el ambiente con columpios, música y estacionamiento gratuito justo en la calle. Las hamburguesas y los cócteles son de primer nivel."</span>
+              <span class="lang-en">"We loved the setting with swings, music, and free street parking. The burgers and house cocktails are top notch."</span>
             </p>
             <div class="reviewer-info">
               <div class="reviewer-avatar">MA</div>
@@ -490,58 +594,85 @@
       <div class="container">
         <div class="reservation-box">
           <div class="reservation-info">
-            <span class="section-tag">RESERVAS ONLINE</span>
-            <h2 class="section-title">Asegura tu Mesa en Jaguar House</h2>
-            <p>Recomendamos realizar tu reserva con anticipación para garantizar la mejor ubicación en nuestra terraza jardín.</p>
+            <span class="section-tag">
+              <span class="lang-es">RESERVAS EN LÍNEA</span>
+              <span class="lang-en">ONLINE RESERVATIONS</span>
+            </span>
+            <h2 class="section-title">
+              <span class="lang-es">Asegura tu Mesa en Jaguar House</span>
+              <span class="lang-en">Book Your Table at Jaguar House</span>
+            </h2>
+            <p>
+              <span class="lang-es">Recomendamos realizar tu reserva con anticipación para garantizar la mejor ubicación en nuestra terraza jardín.</span>
+              <span class="lang-en">We recommend booking in advance to guarantee the best table on our garden terrace.</span>
+            </p>
             <ul class="res-info-list">
               <li>
                 <svg class="info-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                <strong>Dirección:</strong> Calle Martinez y Eloy Alfaro, Baños 180250, Ecuador
+                <strong><span class="lang-es">Dirección:</span><span class="lang-en">Address:</span></strong> Calle Martinez y Eloy Alfaro, Baños 180250, Ecuador
               </li>
               <li>
                 <svg class="info-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                <strong>Horario:</strong> Abierto diariamente de 13:00 a 22:00 hrs
+                <strong><span class="lang-es">Horario:</span><span class="lang-en">Hours:</span></strong> <span class="lang-es">Abierto diariamente de 13:00 a 22:00 hrs</span><span class="lang-en">Open daily from 1:00 PM to 10:00 PM</span>
               </li>
               <li>
                 <svg class="info-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                <strong>Reservas directas:</strong> +593 99 522 8052
+                <strong><span class="lang-es">Reservas directas:</span><span class="lang-en">Direct Bookings:</span></strong> +593 99 522 8052
               </li>
             </ul>
           </div>
           
           <div class="reservation-form">
             <div class="form-group">
-              <label for="nombre">Nombre Completo</label>
+              <label for="nombre">
+                <span class="lang-es">Nombre Completo</span>
+                <span class="lang-en">Full Name</span>
+              </label>
               <input type="text" id="nombre" name="nombre" placeholder="Ej. Ana María Torres">
             </div>
             <div class="form-row">
               <div class="form-group">
-                <label for="fecha">Fecha</label>
+                <label for="fecha">
+                  <span class="lang-es">Fecha</span>
+                  <span class="lang-en">Date</span>
+                </label>
                 <input type="date" id="fecha" name="fecha">
               </div>
               <div class="form-group">
-                <label for="hora">Hora</label>
+                <label for="hora">
+                  <span class="lang-es">Hora</span>
+                  <span class="lang-en">Time</span>
+                </label>
                 <input type="time" id="hora" name="hora">
               </div>
             </div>
             <div class="form-row">
               <div class="form-group">
-                <label for="personas">Nº de Personas</label>
+                <label for="personas">
+                  <span class="lang-es">Nº de Personas</span>
+                  <span class="lang-en">Number of Guests</span>
+                </label>
                 <select id="personas" name="personas">
-                  <option value="2">2 Personas</option>
-                  <option value="4">4 Personas</option>
-                  <option value="6">6 Personas</option>
-                  <option value="8+">8+ Personas (Grupo)</option>
+                  <option value="2">2 <span class="lang-es">Personas</span><span class="lang-en">Guests</span></option>
+                  <option value="4">4 <span class="lang-es">Personas</span><span class="lang-en">Guests</span></option>
+                  <option value="6">6 <span class="lang-es">Personas</span><span class="lang-en">Guests</span></option>
+                  <option value="8+">8+ <span class="lang-es">Personas (Grupo)</span><span class="lang-en">Guests (Group)</span></option>
                 </select>
               </div>
               <div class="form-group">
-                <label for="telefono">Teléfono / WhatsApp</label>
+                <label for="telefono">
+                  <span class="lang-es">Teléfono / WhatsApp</span>
+                  <span class="lang-en">Phone / WhatsApp</span>
+                </label>
                 <input type="tel" id="telefono" name="telefono" placeholder="+593 99 522 8052">
               </div>
             </div>
             <a href="https://wa.me/593995228052?text=Hola%20Jaguar%20House,%20me%20gustar%C3%ADa%20solicitar%20una%20reserva%20de%20mesa%20en%20su%20restaurante." target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.572-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c0-5.445 4.43-9.874 9.877-9.874 2.636 0 5.115 1.028 6.977 2.891 1.86 1.861 2.887 4.337 2.887 6.974 0 5.446-4.43 9.874-9.875 9.874M12.046 0C5.394 0 0 5.394 0 12.045c0 2.121.554 4.194 1.607 6.013L0 24l6.104-1.6c1.751.954 3.737 1.458 5.94 1.458 6.65 0 12.044-5.394 12.044-12.046C24.088 5.394 18.694 0 12.046 0z"/></svg>
-              <span>Reservar Mesa por WhatsApp</span>
+              <span>
+                <span class="lang-es">Reservar Mesa por WhatsApp</span>
+                <span class="lang-en">Book Table via WhatsApp</span>
+              </span>
             </a>
           </div>
         </div>

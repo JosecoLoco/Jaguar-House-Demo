@@ -361,6 +361,75 @@ img {
   color: var(--text-main);
 }
 
+/* PURE CSS LANGUAGE SWITCHER SYSTEM (ES / EN) */
+.lang-radio-state {
+  display: none !important;
+}
+
+.lang-switcher-container {
+  display: flex;
+  align-items: center;
+  background-color: rgba(18, 18, 18, 0.85);
+  border: 1px solid var(--border-copper);
+  border-radius: 50px;
+  padding: 3px;
+}
+
+.lang-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  user-select: none;
+}
+
+.flag-icon {
+  font-size: 0.9rem;
+}
+
+/* Default (Spanish selected) */
+#lang-es:checked ~ * .lang-en {
+  display: none !important;
+}
+#lang-es:checked ~ * .lang-es {
+  display: inline-block;
+}
+#lang-es:checked ~ * .btn-es {
+  background-color: var(--accent-copper);
+  color: #000000;
+  font-weight: 700;
+  box-shadow: 0 0 10px rgba(0, 255, 102, 0.35);
+}
+#lang-es:checked ~ * .btn-en {
+  background-color: transparent;
+  color: var(--text-muted);
+  opacity: 0.75;
+}
+
+/* English selected */
+#lang-en:checked ~ * .lang-es {
+  display: none !important;
+}
+#lang-en:checked ~ * .lang-en {
+  display: inline-block;
+}
+#lang-en:checked ~ * .btn-en {
+  background-color: var(--accent-copper);
+  color: #000000;
+  font-weight: 700;
+  box-shadow: 0 0 10px rgba(0, 255, 102, 0.35);
+}
+#lang-en:checked ~ * .btn-es {
+  background-color: transparent;
+  color: var(--text-muted);
+  opacity: 0.75;
+}
+
 /* 5. HERO SECTION WITH VIDEO BACKGROUND */
 .hero-section {
   position: relative;
